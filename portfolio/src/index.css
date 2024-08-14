@@ -1,0 +1,125 @@
+:root {
+  font-family: 'McGillSans', 'Rubik', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 400vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: rgb(1, 11, 38);
+    background-color: #ececec;
+  }
+
+}
+
+.navigation{
+  padding: 0px 30px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 120px;
+  background-color: 0.75 ;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.navigation ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+.navigation li{
+  cursor: pointer;
+  padding : 15px;
+  font-size: 18px;
+  font-weight: 50%;
+}
+
+.navigation li:hover{
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.navigation h2{
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.navigation h2:hover{
+  text-decoration: underline;
+  color: rgb(0, 166, 255);
+}
+
+
+
+.navigation img{
+  width: 10%;
+  height: auto;
+  border-radius: 6px;
+  margin: 20px;
+  transition: transform 1.2s ease-in-out;
+}
+
+.navigation img:hover{
+  transform: rotate(360deg);
+}
+
+.right_side_nav{
+  display: inline-flex;
+  align-items: center;
+}
+
+.intro{
+  font-size: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.name_intro{
+  color: rgb(0, 166, 255);
+  font-weight:bolder;
+
+}
+.links{
+  list-style: none;
+}
+
+.links img{
+  width : 40px;
+  height: auto;
+  transition: 0.8s ;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.links img:hover{
+  width: 50px;
+  height: auto;
+}
+
+.working{
+  width: 290px;
+  height: auto;
+}
