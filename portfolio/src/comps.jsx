@@ -7,14 +7,14 @@ const github = "https://github.com/4yushP4tel" ;
 
 // sections of the page
 // this will be in the navigation bar
-const sections = 
+const pages = 
     [{id : "about" , section_name : "About"},
     {id : "education" , section_name : "Education"},
     {id : "skills" , section_name : "Skills"}, 
     {id : "projects" , section_name : "Projects"}];
 
-const nav_bar = sections.map(section=>
-    <li key={section.id}>{section.section_name}</li>
+const nav_bar = pages.map(page=>
+    <li key={page.id}>{page.section_name}</li>
 );
 
 const intro_paragraph = `Hi, my Name is Ayush Patel. I am a 19 year old 
@@ -44,11 +44,12 @@ export function Navigation(){
 
 export function Title(){
     return(
-        <div className= "intro">
+        <header className= "intro">
             <div>
             <h1>Hello, I'm </h1>
             <span className='name_intro'><h1>{name}.</h1></span>
             </div>
+
             <ul className='links'>
                 <li><a href={linkedin} target='_blank'><img className="linkedin_image" src="linkedin.jpg" alt="linkedin" /></a></li>
                 <li><a href={github} target='_blank'><img className="github_image" src="darkmodegithub.jpg" alt="github" /></a></li>
@@ -56,7 +57,14 @@ export function Title(){
             </ul>
             <img className="working" src="working.jpg" alt="working" 
             />
-        </div>
+        </header>
+    );
+}
+
+export function About(){
+    return(
+        <section></section>
+
     );
 }
 

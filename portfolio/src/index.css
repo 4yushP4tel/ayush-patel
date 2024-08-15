@@ -15,8 +15,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-height: 400vh;
 }
 
@@ -92,9 +90,13 @@ body {
 
 .intro{
   font-size: 35px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-items: center;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 150px;
+  margin: 0 auto;
 }
 
 .name_intro{
