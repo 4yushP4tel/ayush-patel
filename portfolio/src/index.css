@@ -50,11 +50,12 @@ body {
   padding : 15px;
   font-size: 18px;
   font-weight: 50%;
+  transition: 0.2s;
 }
 
 .navigation li:hover{
   text-decoration: underline;
-  transition: 0.3s;
+  opacity: 0.6;
 }
 
 .navigation h2{
@@ -68,7 +69,6 @@ body {
   text-decoration: underline;
   color: rgb(0, 166, 255);
 }
-
 
 
 .navigation img{
@@ -95,7 +95,8 @@ body {
   justify-items: center;
   justify-content: space-between;
   width: 70%;
-  padding-top: 150px;
+  padding-top: 175px;
+  padding-bottom: 25px;
   margin: 0 auto;
 }
 
@@ -124,4 +125,98 @@ body {
 .working{
   width: 290px;
   height: auto;
+  margin-left: 20px;
+}
+
+.aboutme{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.aboutme h2{
+  font-size: 40px;
+}
+
+.aboutme p{
+  font-family: "Courier-New", monospace;
+  color: rgb(170, 213, 236);
+  text-indent: 20px;
+  font-size: 20px;
+}
+
+.entire_education{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.education{
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 150px;
+  width: 100%;
+}
+.education_hat_image{
+  width: 250px;
+  height: auto;
+}
+.education_hat_image:hover{
+  transform: rotate3d(90deg);
+}
+
+.education h2{
+  font-size: 40px;
+}
+.education h3{
+  font-size: 30px;
+}
+.mcgill_innerdiv{
+  text-indent: 20px;
+  color: red;
+}
+.mcgill_innerdiv h4{
+  font-size: 23px;
+}
+.mcgill_innerdiv p{
+  font-size: 20 px;
+}
+.jac_innerdiv{
+  text-indent: 20px;
+  color: #0165fc;
+}
+.jac_innerdiv h4{
+  font-size: 23px;
+}
+.mcgill{
+  color: red;
+}
+.jac{
+  color: #0165fc;
+}
+.mcgill_icon{
+  width: 200px;
+  height: auto;
+  transition: 0.5s;
+}
+.mcgill_icon:hover{
+  width: 220px;
+  height:auto;
+}
+.jac_icon{
+  width: 100px;
+  height: auto;
+  transition: 0.5s;
+}
+.jac_icon:hover{
+  width: 120px;
+  height: auto;
+}
+.name_logo{
+  align-items: center;
+  justify-content: center;
 }
