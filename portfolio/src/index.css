@@ -175,6 +175,10 @@ body {
 .education h3{
   font-size: 30px;
 }
+.education p{
+  font-size: 20px;
+}
+
 .mcgill_innerdiv{
   text-indent: 20px;
   color: red;

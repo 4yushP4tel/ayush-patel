@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import {Navigation, Title, About, Education} from './comps.jsx'
+import {Navigation, Title, About, Education, Projects} from './comps.jsx'
 import './index.css'
 
 export function App(){
@@ -10,6 +10,7 @@ export function App(){
         <Title />
         <About/>
         <Education/>
+        <Projects/>
     </>
   );
 }

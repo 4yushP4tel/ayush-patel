@@ -99,6 +99,7 @@ export function Education(){
                     </div>
                     <div className="jac_innerdiv">
                         <h4>Sciences <span className='study_period'>2022-2024</span></h4>
+                        <p>Awards: Dean's List</p>
                     </div>
                 </div>
                 
@@ -110,4 +111,38 @@ export function Education(){
     );
 }
 
+export function Projects(){
+    return(
+        <section className='projects' id='myprojects'>
+        <h2>My Projects: </h2>
+        <section className='getfitai'>
+            <h3>GetFitAI</h3>
+            <p>GetFitAI is a fullstack web application that uses the OpenAI REST API to generate workout plans and diet outlines designed according to a user's needs.</p>
+            <a href="https://github.com/4yushP4tel/GetFitAI"><img src="darkmodegithub.jpg" alt="githubincon" /></a>
+            <div className='project_skills'>
+                <ul>
+                    <li>python</li>
+                    <li>flask</li>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>js</li>
+                </ul>
+            </div>
+
+        </section>
+        <section className='snake'>
+            <h3>Infinite Snake Game</h3>
+            <p>The Infinite Snake Game is a game created using the PyGame python library and the principles of object oriented programming. It allows a user to play the classic Snake Game for as long as they desire all while being able to track their score.</p>
+            <a href="https://github.com/4yushP4tel/Snake_Game"><img src="darkmodegithub.jpg" alt="githubicon" /></a>
+            <div className='project_skills'>
+                <ul>
+                    <li>python</li>
+                    <li>pygame</li>
+                </ul>
+
+            </div>
+        </section>
+    </section>
+    );
+}
 
