@@ -84,7 +84,7 @@ export function Education(){
                 <div className='university'>
                     <div className='name_logo'>
                         <h3 className='mcgill'>McGill University</h3>
-                        <a href="https://www.mcgill.ca/"> <img className="mcgill_icon" src="mcgill.jpg" alt="mcgill_icon" /></a>
+                        <a href="https://www.mcgill.ca/" target="_blank"> <img className="mcgill_icon" src="mcgill.jpg" alt="mcgill_icon" /></a>
                     </div>
                     <div className='mcgill_innerdiv'>
                         <h4>Bachelor of Software Engineering Co-Op <span className='study_period'>Expected 2028</span></h4>
@@ -95,7 +95,7 @@ export function Education(){
                 <div className='cegep'>
                     <div className='name_logo'>
                         <h3 className='jac'>John Abbott College</h3>
-                        <a href="https://johnabbott.qc.ca/"><img className='jac_icon' src="jac.jpg" alt="jac_icon" /></a>
+                        <a href="https://johnabbott.qc.ca/" target='_blank'><img className='jac_icon' src="jac.jpg" alt="jac_icon" /></a>
                     </div>
                     <div className="jac_innerdiv">
                         <h4>Sciences <span className='study_period'>2022-2024</span></h4>
@@ -114,35 +114,48 @@ export function Education(){
 export function Projects(){
     return(
         <section className='projects' id='myprojects'>
-        <h2>My Projects: </h2>
-        <section className='getfitai'>
-            <h3>GetFitAI</h3>
-            <p>GetFitAI is a fullstack web application that uses the OpenAI REST API to generate workout plans and diet outlines designed according to a user's needs.</p>
-            <a href="https://github.com/4yushP4tel/GetFitAI"><img src="darkmodegithub.jpg" alt="githubincon" /></a>
-            <div className='project_skills'>
-                <ul>
-                    <li>python</li>
-                    <li>flask</li>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>js</li>
-                </ul>
-            </div>
+            <h2>My Projects: </h2>
+            <section className='single_project' id='getfitai'>
+                <h3>GetFitAI</h3>
+                <div className='project_content_images'>
+                    <img src="workout.jpg" alt="getfitai_image" className='project_images'/>
+                    <a href="https://github.com/4yushP4tel/GetFitAI" target='_blank'><img src="darkmodegithub.jpg" alt="githubincon" className='githubprojectlink'/></a>
+                </div>
+                <p>GetFitAI is a fullstack web application that uses the OpenAI REST API to generate workout plans and diet outlines designed according to a user's needs.</p>
+                <div className='project_skills'>
+                    <ul>
+                        <li><img src="python.jpg" alt="python" /></li>
+                        <li><img src="flask.jpg" alt="flask" /></li>
+                        <li><img src="html.jpg" alt="html" /></li>
+                        <li><img src="css.jpg" alt="css" /></li>
+                        <li><img src="js.jpg" alt="js" /></li>
+                    </ul>
+                </div>
+            </section>
 
-        </section>
-        <section className='snake'>
-            <h3>Infinite Snake Game</h3>
-            <p>The Infinite Snake Game is a game created using the PyGame python library and the principles of object oriented programming. It allows a user to play the classic Snake Game for as long as they desire all while being able to track their score.</p>
-            <a href="https://github.com/4yushP4tel/Snake_Game"><img src="darkmodegithub.jpg" alt="githubicon" /></a>
-            <div className='project_skills'>
-                <ul>
-                    <li>python</li>
-                    <li>pygame</li>
-                </ul>
+            <section className='single_project' id='snake'>
+                <h3>Infinite Snake Game</h3>
+                <div className='project_content_images'>
+                    <img src="snakegame.jpg" alt="snakegame_image" className='project_images'/>
+                    <a href="https://github.com/4yushP4tel/Snake_Game" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubprojectlink'/></a>
+                </div>
+                <p>The Infinite Snake Game is a game created using the PyGame python library and the principles of object oriented programming. It allows a user to play the classic Snake Game for as long as they desire all while being able to track their score.</p>
+                <div className='project_skills'>
+                    <ul>
+                        <li><img src="python.jpg" alt="python" /></li>
+                        <li><img src="pygame.jpg" alt="pygame" /></li>
+                    </ul>
 
-            </div>
-        </section>
+                </div>
+            </section>
     </section>
     );
+}
+
+function showproject(){
+    var getfitai_container = document.getElementById("getfitai");
+    var snakegame_container = document.getElementById("snake");
+
+
 }
 

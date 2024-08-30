@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 95%;
-  height: 120px;
+  height: 110px;
   background-color: 0.75 ;
   z-index: 999;
   backdrop-filter: blur(10px);
@@ -223,4 +223,61 @@ body {
 .name_logo{
   align-items: center;
   justify-content: center;
+}
+.project_images{
+  height: 200px;
+  width: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 20px;
+}
+.githubprojectlink{
+  height: 70px;
+  width: auto;
+  transition: 0.5s;
+}
+.githubprojectlink:hover{
+  height: 80px;
+  width: auto;
+}
+.project_skills img{
+  height: 45px;
+  width: auto;
+}
+.project_skills ul{
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.project_skills li{
+  padding: 28px;
+}
+.projects{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.projects h2{
+  font-size: 40px;
+}
+.projects h3{
+  font-size: 30px;
+}
+.single_project{
+  border-style: dotted;
+  border-color: #ececec;
+  text-align: center;
+}
+.projects p{
+  font-size: 15px;
+  font-family: "Courier-New", monospace;
+  color: rgb(170, 213, 236);
+}
+.project_content_images{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
