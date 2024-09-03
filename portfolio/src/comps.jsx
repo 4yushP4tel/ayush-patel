@@ -1,4 +1,5 @@
 import './index.css';
+import { useState } from 'react';
 
 const name = "Ayush";
 const full_name = "Ayush Patel"
@@ -10,8 +11,8 @@ const github = "https://github.com/4yushP4tel" ;
 const pages = 
     [{id : "about" , section_name : "About", destination_id : "aboutme"},
     {id : "education" , section_name : "Education", destination_id : "myeducation"},
-    {id : "skills" , section_name : "Skills", destination_id: "myskills"}, 
-    {id : "projects" , section_name : "Projects", destination_id: "myprojects"}];
+    {id : "projects" , section_name : "Projects", destination_id: "myprojects"},
+    {id : "skills" , section_name : "Skills", destination_id: "myskills"}, ];
 
     const nav_bar = pages.map(page=>
         <li key={page.id}>{page.section_name}</li>
@@ -112,10 +113,22 @@ export function Education(){
 }
 
 export function Projects(){
+
+    const [projectdisplay, setprojectdisplay] = useState("GetFitAIdisplay");
+
+    const change_display = (e) => {
+        setprojectdisplay(e.target.value);
+    }
+
     return(
         <section className='projects' id='myprojects'>
             <h2>My Projects: </h2>
-            <section className='single_project' id='getfitai'>
+            <section className='project_selection'>
+                <label style={{color: projectdisplay === "GetFitAIdisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="GetFitAIdisplay" name='project_display' onChange={change_display} checked={projectdisplay === "GetFitAIdisplay"}/>GetFitAI</label>
+                <label style={{color: projectdisplay === "Snakedisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="Snakedisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Snakedisplay"}/>Infinite Snake Game</label>
+                <label style={{color: projectdisplay === "Portfoliodisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="Portfoliodisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Portfoliodisplay"}/>Portfolio Website</label>
+            </section>
+            <section className='single_project' style={{display: projectdisplay === "GetFitAIdisplay"? 'block' : 'none'}} >
                 <h3>GetFitAI</h3>
                 <div className='project_content_images'>
                     <img src="workout.jpg" alt="getfitai_image" className='project_images'/>
@@ -133,7 +146,7 @@ export function Projects(){
                 </div>
             </section>
 
-            <section className='single_project' id='snake'>
+            <section className='single_project' style={{display: projectdisplay === "Snakedisplay"? 'block' : 'none'}}>
                 <h3>Infinite Snake Game</h3>
                 <div className='project_content_images'>
                     <img src="snakegame.jpg" alt="snakegame_image" className='project_images'/>
@@ -148,14 +161,67 @@ export function Projects(){
 
                 </div>
             </section>
+            <section className='single_project' style={{display: projectdisplay === "Portfoliodisplay"? 'block' : 'none'}}>
+                <h3>Portfolio Website</h3>
+                <div className='project_content_images'>
+                    <img src="portfolio.jpg" alt="portfolio_image" className='project_images'/>
+                    <a href="https://github.com/4yushP4tel/ayush-patel" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubprojectlink'/></a>
+                </div>
+                <p>My Personal Portfolio Website is a React app that is built completely from scratch. It is the website that you are currently on right now!</p>
+                <div className='project_skills'>
+                    <ul>
+                        <li><img src="js.jpg" alt="js" /></li>
+                        <li><img src="react.jpg" alt="react" /></li>
+                        <li><img src="css.jpg" alt="css" /></li>
+
+                    </ul>
+
+                </div>
+
+
+            </section>
     </section>
     );
 }
 
-function showproject(){
-    var getfitai_container = document.getElementById("getfitai");
-    var snakegame_container = document.getElementById("snake");
+export function Skills(){
+    return(
+        <section className='skills' id='myskills'>
+            <h2>My Skills:</h2>
+            <section className='languages'>
+                <h3>Coding Languages</h3>
+                <ul>
+                    <li><img src="python.jpg" alt="python" /></li>
+                    <li><img src="js.jpg" alt="js" /></li>
+                    <li><img src="html.jpg" alt="html" /></li>
+                    <li><img src="css.jpg" alt="css" /></li>
+                </ul>
+
+            </section>
+
+            <section className='frameworks'>
+                <h3>Frameworks/Libraries</h3>
+                <ul>
+                    <li><img src="react.jpg" alt="react" /></li>
+                    <li><img src="flask.jpg" alt="flask" /></li>
+                    <li><img src="pygame.jpg" alt="pygame" /></li>
+                </ul>
+            </section>
+
+            <section className='technologies'>
+                <h3>Technologies</h3>
+                <ul>
+                    <li><img src="git.jpg" alt="git"/></li>
+                    <li><img src="nodejs.jpg" alt="nodejs"/></li>
+                    <li><img src="restapi.jpg" alt="restapi"/></li>
+                </ul>
+                
+            </section>
 
 
+        </section>
+    );
 }
+
+
 

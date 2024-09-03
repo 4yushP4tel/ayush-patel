@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 400vh;
 }
 
@@ -27,15 +28,15 @@ body {
 }
 
 .navigation{
-  padding: 0px 30px;
-  position: fixed;
+  padding: 0px;
+  position:fixed;
   top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
-  height: 110px;
-  background-color: 0.75 ;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 999;
   backdrop-filter: blur(10px);
 }
@@ -280,4 +281,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.project_selection{
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 166, 255);
+}
+.project_selection input{
+  display: none;
+}
+.radio_check:checked ~ label{
+  color:rgb(0, 166, 255);
+}
+.project_selection label{
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.project_selection label:not(:last-of-type){
+  border-right: 2px solid rgb(0, 166, 255);
+}
+
+.project_selection label:hover{
+  color:rgb(0, 166, 255);
+  transition: 0.5s;
+}
+.skills ul{
+  list-style: none;
+  display: inline-flex;
+}
+.skills li{
+  margin-left: 50px;
+}
+.skills img{
+  width:60px;
+  height: auto;
 }
