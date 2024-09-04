@@ -193,7 +193,7 @@ export function Skills(){
                 <ul>
                     <li><img src="python.jpg" alt="python" /></li>
                     <li><img src="js.jpg" alt="js" /></li>
-                    <li><img src="html.jpg" alt="html" /></li>
+                    <li><img src="html.jpg" alt="html"/></li>
                     <li><img src="css.jpg" alt="css" /></li>
                 </ul>
 
@@ -203,7 +203,7 @@ export function Skills(){
                 <h3>Frameworks/Libraries</h3>
                 <ul>
                     <li><img src="react.jpg" alt="react" /></li>
-                    <li><img src="flask.jpg" alt="flask" /></li>
+                    <li><img src="flask.jpg" alt="flask"/></li>
                     <li><img src="pygame.jpg" alt="pygame" /></li>
                 </ul>
             </section>

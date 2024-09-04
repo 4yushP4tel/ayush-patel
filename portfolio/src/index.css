@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   height: 120px;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999;
@@ -307,14 +307,37 @@ body {
   color:rgb(0, 166, 255);
   transition: 0.5s;
 }
+.skills{
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.skills h2{
+  font-size: 40px;
+}
+.skills h3{
+  font-size: 30px;
+}
+
 .skills ul{
   list-style: none;
+  width: 100%;
   display: inline-flex;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgb(0, 166, 255,0.3);
+  padding: 8px
 }
 .skills li{
-  margin-left: 50px;
+  margin-left: 150px;
 }
 .skills img{
-  width:60px;
-  height: auto;
+  width:auto;
+  height: 70px;
+  transition: 0.5s;
+}
+
+.skills img:hover{
+  width: auto;
+  height: 50px;
 }
