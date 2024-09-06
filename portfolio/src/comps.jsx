@@ -6,31 +6,25 @@ const full_name = "Ayush Patel"
 const linkedin = "https://www.linkedin.com/in/ayush-patel-701205230/" ;
 const github = "https://github.com/4yushP4tel" ;
 
-// sections of the page
-// this will be in the navigation bar
-const pages = 
-    [{id : "about" , section_name : "About", destination_id : "aboutme"},
-    {id : "education" , section_name : "Education", destination_id : "myeducation"},
-    {id : "projects" , section_name : "Projects", destination_id: "myprojects"},
-    {id : "skills" , section_name : "Skills", destination_id: "myskills"}, ];
-
-    const nav_bar = pages.map(page=>
-        <li key={page.id}>{page.section_name}</li>
-    );
-
-//about me section paragraph
+const scroll_to = (section_id) => {
+    document.getElementById(section_id).scrollIntoView({behaviour : "smooth"})
+}
 
 
 //navigation bar
 export function Navigation(){
+    
     return(
-        <nav className = "navigation">
-            <div className= "right_side_nav">
+        <nav className = "navigation" value = "navigation">
+            <div className= "left_side_nav">
                 <img src="landscape.jpg" alt="nav_bar_photo" />
-                <h2>{full_name}</h2>
+                <h2 onClick={()=>scroll_to("intro")}>{full_name}</h2>
             </div>
             <ul>
-                {nav_bar}
+            <li onClick={()=>scroll_to("about_me")}>About</li>  
+            <li onClick={()=>scroll_to("myeducation")}>Education</li>  
+            <li onClick={()=>scroll_to("myprojects")}>Projects</li>  
+            <li onClick={()=>scroll_to("myskills")}>Skills</li>    
             </ul>
         </nav>
     );
@@ -40,7 +34,7 @@ export function Navigation(){
 //title, welcome to my page
 export function Title(){
     return(
-        <header className= "intro">
+        <header className= "intro" id="intro">
             <div>
             <h1>Hello, I'm </h1>
             <span className='name_intro'><h1>{name}.</h1></span>

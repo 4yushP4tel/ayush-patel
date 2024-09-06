@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   height: 120px;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 999;
@@ -44,6 +44,7 @@ body {
 .navigation ul{
   list-style: none;
   display: inline-flex;
+  padding-right: 20px;
 }
 
 .navigation li{
@@ -84,7 +85,7 @@ body {
   transform: rotate(360deg);
 }
 
-.right_side_nav{
+.left_side_nav{
   display: inline-flex;
   align-items: center;
 }
