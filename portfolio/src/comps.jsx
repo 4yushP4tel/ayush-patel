@@ -7,7 +7,7 @@ const linkedin = "https://www.linkedin.com/in/ayush-patel-701205230/" ;
 const github = "https://github.com/4yushP4tel" ;
 
 const scroll_to = (section_id) => {
-    document.getElementById(section_id).scrollIntoView({behaviour : "smooth"})
+    document.getElementById(section_id).scrollIntoView({behavior : "smooth"})
 }
 
 
@@ -42,7 +42,8 @@ export function Title(){
 
             <ul className='links'>
                 <li><a href={linkedin} target='_blank'><img className="linkedin_image" src="linkedin.jpg" alt="linkedin" /></a></li>
-                <li><a href={github} target='_blank'><img className="github_image" src="darkmodegithub.jpg" alt="github" /></a></li>
+                <li className='githubimg'><a href={github} target='_blank'><img className="github_image" src="darkmodegithub.jpg" alt="github" /></a></li>
+                <li><a href= "resume.pdf" target='_blank'><img className="resume_image" src="resume.jpg" alt="email" /></a></li>
                 <li><a href= "mailto: ayush.patel@mail.mcgill.ca" target='_blank'><img className="email_image" src="email.jpg" alt="email" /></a></li>
             </ul>
             <img className="working" src="working.jpg" alt="working" />
@@ -118,15 +119,15 @@ export function Projects(){
         <section className='projects' id='myprojects'>
             <h2>My Projects: </h2>
             <section className='project_selection'>
-                <label style={{color: projectdisplay === "GetFitAIdisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="GetFitAIdisplay" name='project_display' onChange={change_display} checked={projectdisplay === "GetFitAIdisplay"}/>GetFitAI</label>
-                <label style={{color: projectdisplay === "Snakedisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="Snakedisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Snakedisplay"}/>Infinite Snake Game</label>
-                <label style={{color: projectdisplay === "Portfoliodisplay"? 'rgb(0, 166, 255)' : 'white'}}><input type="radio" className="radio_check" value="Portfoliodisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Portfoliodisplay"}/>Portfolio Website</label>
+                <label className='project_select' style={{color: projectdisplay === "GetFitAIdisplay"? 'rgb(0, 166, 255)' : '#a2cffe'}}><input type="radio" className="radio_check" value="GetFitAIdisplay" name='project_display' onChange={change_display} checked={projectdisplay === "GetFitAIdisplay"}/>GetFitAI</label>
+                <label className='project_select' style={{color: projectdisplay === "Snakedisplay"? 'rgb(0, 166, 255)' : '#a2cffe'}}><input type="radio" className="radio_check" value="Snakedisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Snakedisplay"}/>Infinite Snake Game</label>
+                <label className='project_select' style={{color: projectdisplay === "Portfoliodisplay"? 'rgb(0, 166, 255)' : '#a2cffe'}}><input type="radio" className="radio_check" value="Portfoliodisplay" name='project_display' onChange={change_display} checked={projectdisplay === "Portfoliodisplay"}/>Portfolio Website</label>
             </section>
             <section className='single_project' style={{display: projectdisplay === "GetFitAIdisplay"? 'block' : 'none'}} >
                 <h3>GetFitAI</h3>
                 <div className='project_content_images'>
                     <img src="workout.jpg" alt="getfitai_image" className='project_images'/>
-                    <a href="https://github.com/4yushP4tel/GetFitAI" target='_blank'><img src="darkmodegithub.jpg" alt="githubincon" className='githubprojectlink'/></a>
+                    <a href="https://github.com/4yushP4tel/GetFitAI" target='_blank'><img src="darkmodegithub.jpg" alt="githubincon" className='githubimg'/></a>
                 </div>
                 <p>GetFitAI is a fullstack web application that uses the OpenAI REST API to generate workout plans and diet outlines designed according to a user's needs.</p>
                 <div className='project_skills'>
@@ -144,7 +145,7 @@ export function Projects(){
                 <h3>Infinite Snake Game</h3>
                 <div className='project_content_images'>
                     <img src="snakegame.jpg" alt="snakegame_image" className='project_images'/>
-                    <a href="https://github.com/4yushP4tel/Snake_Game" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubprojectlink'/></a>
+                    <a href="https://github.com/4yushP4tel/Snake_Game" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubimg'/></a>
                 </div>
                 <p>The Infinite Snake Game is a game created using the PyGame python library and the principles of object oriented programming. It allows a user to play the classic Snake Game for as long as they desire all while being able to track their score.</p>
                 <div className='project_skills'>
@@ -159,7 +160,7 @@ export function Projects(){
                 <h3>Portfolio Website</h3>
                 <div className='project_content_images'>
                     <img src="portfolio.jpg" alt="portfolio_image" className='project_images'/>
-                    <a href="https://github.com/4yushP4tel/ayush-patel" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubprojectlink'/></a>
+                    <a href="https://github.com/4yushP4tel/ayush-patel" target='_blank'><img src="darkmodegithub.jpg" alt="githubicon" className='githubimg'/></a>
                 </div>
                 <p>My Personal Portfolio Website is a React app that is built completely from scratch. It is the website that you are currently on right now!</p>
                 <div className='project_skills'>

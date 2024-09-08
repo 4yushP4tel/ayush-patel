@@ -23,6 +23,24 @@ body {
   :root {
     color: rgb(1, 11, 38);
     background-color: #ececec;
+    .navigation{
+      background-color: rgb(210, 209, 209, 0.70);
+    }
+    .githubimg{
+      filter: invert(100%);
+    }
+    .single_project{
+      border-color: #000000;
+    }
+    .projects p{
+      color: #000435;
+    }
+    .aboutme p{
+      color: #000435;
+    }
+    .project_select{
+      color: #000435;
+    }
   }
 
 }
@@ -36,7 +54,7 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.70);
   z-index: 999;
   backdrop-filter: blur(10px);
 }
@@ -234,12 +252,12 @@ body {
   border-width: 5px;
   border-radius: 20px;
 }
-.githubprojectlink{
+.githubimg{
   height: 70px;
   width: auto;
   transition: 0.5s;
 }
-.githubprojectlink:hover{
+.githubimg:hover{
   height: 80px;
   width: auto;
 }
