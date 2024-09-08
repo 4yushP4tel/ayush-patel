@@ -43,7 +43,7 @@ export function Title(){
             <ul className='links'>
                 <li><a href={linkedin} target='_blank'><img className="linkedin_image" src="linkedin.jpg" alt="linkedin" /></a></li>
                 <li className='githubimg'><a href={github} target='_blank'><img className="github_image" src="darkmodegithub.jpg" alt="github" /></a></li>
-                <li><a href= "resume.pdf" target='_blank'><img className="resume_image" src="resume.jpg" alt="email" /></a></li>
+                <li><a href= "Resume2024.pdf" target='_blank'><img className="resume_image" src="resume.jpg" alt="email" /></a></li>
                 <li><a href= "mailto: ayush.patel@mail.mcgill.ca" target='_blank'><img className="email_image" src="email.jpg" alt="email" /></a></li>
             </ul>
             <img className="working" src="working.jpg" alt="working" />
