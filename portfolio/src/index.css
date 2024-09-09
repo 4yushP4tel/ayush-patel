@@ -348,7 +348,8 @@ body {
   padding: 8px
 }
 .skills li{
-  margin-left: 150px;
+  display: inline-flex;
+  padding-left: 15%;
 }
 .skills img{
   width:auto;
